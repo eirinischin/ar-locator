@@ -1,0 +1,53 @@
+{
+  materials: [
+    {
+      name: 'Earth',
+      parameters: [
+        {
+          baseColor: 'earth',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.408248,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/earth.obj',
+    name: 'earth',
+    recenter: 'root',
+    scale: 0.0001,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/earth.jpg',
+      name: 'earth',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'earth.jpg',
+    },
+  ],
+  version: '0.54:2',
+}
